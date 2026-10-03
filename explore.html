@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore your options · HOMEWARD</title>
+  <meta name="description" content="Answer five quick questions to see which NYC housing support pathways may be relevant to you.">
+  <meta property="og:title" content="HOMEWARD · NYC housing support guide">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta name="theme-color" content="#4AA39A">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wdth,wght@75..125,400..800&family=Inter:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/explore.css">
+</head>
+<body class="page-explore">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html" aria-label="HOMEWARD home"><span class="logo logo--compact" aria-hidden="true"><span class="logo__word">homeward</span></span><img class="brand__mark" src="assets/logo/mark.svg" alt="" width="26" height="28"></a>
+    </div>
+  </header>
+  <nav class="wayfinder" aria-label="Site"><div class="wrap wayfinder__inner"><a href="index.html"><span aria-hidden="true">←</span> Home</a><a href="support.html">Find support <span aria-hidden="true">→</span></a></div></nav>
+
+  <main id="main" class="explore">
+    <div class="wrap explore__col" id="flow"></div>
+    <noscript><div class="wrap explore__col"><p>This guide needs JavaScript to show one question at a time. You can still <a href="support.html">browse support options</a> or call DSS at <a href="tel:7185571399">718-557-1399</a>.</p></div></noscript>
+  </main>
+
+  <footer class="site-footer site-footer--compact on-dark">
+    <div class="wrap footer-compact">
+      <p class="footer-compact__note">HOMEWARD is an independent student design prototype, not an official NYC government service.</p>
+      <a class="footer-compact__link" href="tel:7185571399">DSS OneNumber: 718-557-1399</a>
+      <a class="footer-compact__link" href="https://www.nyc.gov/site/hra/help/homelessness-prevention.page" target="_blank" rel="noopener">Official NYC sources<svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M6 3h7v7M13 3 4 12"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+      <button type="button" class="motion-toggle" aria-pressed="false"><span class="motion-toggle__track" aria-hidden="true"></span><span class="motion-toggle__label">Turn off motion</span></button>
+    </div>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/plates.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/explore.js"></script>
+</body>
+</html>

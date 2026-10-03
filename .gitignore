@@ -1,0 +1,15 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Tooling
+node_modules/
+.vercel/
+
+# Testing screenshots and scratch files
+*.png.tmp
+screenshots/
+scratch/
+
+# Working notes and media not part of the site
+Claude outputs/

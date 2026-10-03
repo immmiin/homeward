@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find support · HOMEWARD</title>
+  <meta name="description" content="Understand what each NYC housing support service offers and where to start.">
+  <meta property="og:title" content="HOMEWARD · NYC housing support guide">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta name="theme-color" content="#4AA39A">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wdth,wght@75..125,400..800&family=Inter:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/support.css">
+</head>
+<body class="page-support">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html" aria-label="HOMEWARD home"><span class="logo logo--compact" aria-hidden="true"><span class="logo__word">homeward</span></span><img class="brand__mark" src="assets/logo/mark.svg" alt="" width="26" height="28"></a>
+    </div>
+  </header>
+  <nav class="wayfinder" aria-label="Site"><div class="wrap wayfinder__inner"><a href="index.html"><span aria-hidden="true">←</span> Home</a><a href="explore.html">Explore your options <span aria-hidden="true">→</span></a></div></nav>
+
+  <main id="main" class="support">
+    <section class="support-hero band band--yellow" aria-labelledby="support-title" data-sticky-after>
+      <div class="wrap support-hero__inner">
+        <p class="eyebrow">Find support</p>
+        <h1 id="support-title" class="display support-hero__title">Find support for your situation.</h1>
+        <p class="lede">Understand what each service offers and where to start.</p>
+      </div>
+    </section>
+
+    <div class="filters">
+      <div class="wrap filters__inner">
+        <div class="filters__pills" role="group" aria-label="Filter services by need" id="filters"></div>
+        <p class="filters__status small" id="filter-status" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <section class="wrap programs" aria-labelledby="primary-title">
+      <h2 id="primary-title" class="programs__label">Main services</h2>
+      <ul class="prog-list" id="primary" role="list"></ul>
+    </section>
+
+    <section class="wrap programs programs--more" aria-labelledby="more-title" id="more-section">
+      <h2 id="more-title" class="programs__label">More housing services</h2>
+      <ul class="prog-compact" id="more" role="list"></ul>
+    </section>
+
+    <section class="section rights" aria-labelledby="rights-title">
+      <div class="wrap">
+        <h2 id="rights-title" class="headline h-48 rights__title">Good to know</h2>
+        <ul class="rights__grid" role="list">
+          <li class="rights__card" id="know-your-rights">
+            <p class="eyebrow">Eviction</p>
+            <h3 class="headline h-32">Know your rights</h3>
+            <p>Lockouts are illegal in NYC. An eviction has to go through a court process, and tenants facing eviction in Housing Court can get free legal help.</p>
+            <a class="extlink" href="https://www.nyc.gov/site/hpd/services-and-information/eviction-prevention.page" target="_blank" rel="noopener">Eviction prevention and tenant rights (HPD)<svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M6 3h7v7M13 3 4 12"/></svg><span class="sr-only"> (official NYC page, opens in a new tab)</span></a>
+          </li>
+          <li class="rights__card" id="income-discrimination">
+            <p class="eyebrow">Renting with a voucher</p>
+            <h3 class="headline h-32">Source of income discrimination</h3>
+            <p>If a landlord or broker refuses to rent or show you an apartment because you use government assistance to pay rent, that may be source of income discrimination. The official page explains how to report it.</p>
+            <a class="extlink" href="https://www.nyc.gov/site/hra/help/income-discrimination.page" target="_blank" rel="noopener">Source of income discrimination<svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M6 3h7v7M13 3 4 12"/></svg><span class="sr-only"> (official NYC page, opens in a new tab)</span></a>
+          </li>
+          <li class="rights__card rights__card--call on-dark">
+            <p class="eyebrow">Not sure where to start?</p>
+            <h3 class="headline h-32">Call DSS at <a href="tel:7185571399">718-557-1399</a></h3>
+            <p>The DSS OneNumber can answer questions about rental assistance and homelessness prevention. Or call 311 and ask for the Tenant Helpline.</p>
+            <a class="btn btn--light" href="explore.html">Or answer five questions <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M3 10h13M11 4.5 16.5 10 11 15.5"/></svg></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Quick view drawer (filled by js/support.js) -->
+  <dialog class="qv" id="quick-view" aria-labelledby="qv-title">
+    <div class="qv__panel"></div>
+  </dialog>
+
+  <footer class="site-footer on-dark">
+    <div class="wrap">
+      <a class="logo footer__logo" href="index.html" aria-label="HOMEWARD home"><span class="logo__word">homeward</span></a>
+      <div class="fbox-grid">
+        <section class="fbox fbox--call" aria-labelledby="f-call">
+          <h2 class="fbox__label" id="f-call">Call</h2>
+          <p class="footer__note">DSS OneNumber</p>
+          <a class="footer__phone" href="tel:7185571399">718-557-1399</a>
+          <p class="footer__note">Or call 311 and ask for the Tenant Helpline.</p>
+        </section>
+        <section class="fbox" aria-labelledby="f-guide">
+          <h2 class="fbox__label" id="f-guide">Use this guide</h2>
+          <ul>
+            <li><a href="explore.html">Explore your options</a></li>
+            <li><a href="support.html">Find support</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </section>
+        <section class="fbox fbox--sources" aria-labelledby="f-sources">
+          <h2 class="fbox__label" id="f-sources">Official NYC sources</h2>
+          <ul class="fbox__cols">
+            <li><a href="https://www.nyc.gov/site/hra/help/homelessness-prevention.page" target="_blank" rel="noopener">Homelessness Prevention<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/homebase.page" target="_blank" rel="noopener">Homebase<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/cityfheps.page" target="_blank" rel="noopener">CityFHEPS<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/legal-assistance.page" target="_blank" rel="noopener">Legal assistance<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/cash-assistance.page" target="_blank" rel="noopener">Cash Assistance<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/supportive-housing.page" target="_blank" rel="noopener">Supportive Housing<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/affordable-housing.page" target="_blank" rel="noopener">Affordable Housing Services<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/home-support-unit.page" target="_blank" rel="noopener">Home Support Unit<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/income-discrimination.page" target="_blank" rel="noopener">Source of income discrimination<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+          </ul>
+        </section>
+        <section class="fbox fbox--about" aria-labelledby="f-about">
+          <h2 class="fbox__label" id="f-about">About</h2>
+          <p>HOMEWARD is an independent student design prototype, not an official NYC government service.</p>
+          <button type="button" class="motion-toggle" aria-pressed="false"><span class="motion-toggle__track" aria-hidden="true"></span><span class="motion-toggle__label">Turn off motion</span></button>
+          <p class="fbox__credit">3D house: Microsoft Fluent Emoji (<a href="assets/3d/FLUENT_EMOJI_LICENSE.txt">MIT License</a>).</p>
+        </section>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-cta" aria-hidden="true">
+    <a class="btn btn--primary" href="explore.html" tabindex="-1">Explore your options <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M3 10h13M11 4.5 16.5 10 11 15.5"/></svg></a>
+  </div>
+
+  <script src="js/content.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/support.js"></script>
+</body>
+</html>

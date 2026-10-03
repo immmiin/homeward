@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HOMEWARD · NYC housing support guide</title>
+  <meta name="description" content="Worried about keeping your home? Explore NYC housing support options based on your situation and connect with official help.">
+  <meta property="og:title" content="HOMEWARD · NYC housing support guide">
+  <meta property="og:description" content="Worried about keeping your home? Explore NYC housing support options and connect with official help.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wdth,wght@75..125,400..800&family=Inter:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body class="page-home">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html" aria-label="HOMEWARD home"><span class="logo logo--compact" aria-hidden="true"><span class="logo__word">homeward</span></span><img class="brand__mark" src="assets/logo/mark.svg" alt="" width="26" height="28"></a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Hero: the open frame sits inline in the headline, holding the house -->
+    <section class="hero" aria-labelledby="hero-title" data-sticky-after>
+      <div class="wrap hero__inner">
+        <p class="eyebrow hero__label">For New York City residents</p>
+        <h1 id="hero-title" class="display hero__title">
+          <span class="ht">Worried about</span><br class="br-m"> <span class="ht">keeping</span><br class="br-d"> <span class="ht">your</span><br class="br-m"> <span class="hframe" aria-hidden="true"><span class="hframe__bk hframe__bk--tl"></span><span class="hframe__house"><img src="assets/3d/house.png" alt="" width="512" height="512" decoding="async"><span class="hframe__shadow"></span></span><span class="hframe__bk hframe__bk--br"></span></span> <span class="ht">home?</span>
+        </h1>
+        <p class="mono hero__number"><a href="tel:7185571399">DSS OneNumber <span aria-hidden="true">—</span> 718–557–1399</a></p>
+        <p class="hero__lede">Explore housing support options based on your situation.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--ink" href="explore.html">Explore your options <span class="btn__dot" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 10h11M10.5 5 15.5 10 10.5 15"/></svg></span></a>
+          <a class="textlink hero__browse" href="support.html">Browse support</a>
+        </div>
+        <p class="hero__note">No account needed. This guide does not determine final eligibility.</p>
+      </div>
+    </section>
+
+    <!-- 2. The idea in one sentence -->
+    <section class="concept" aria-label="What HOMEWARD is">
+      <div class="wrap concept__inner">
+        <p class="mono ledger-label concept__label"><span>What this is</span><span>01</span></p>
+        <p class="concept__text">Behind every ordinary front door, someone may be worried about rent, arrears, or whether they can stay. HOMEWARD helps New Yorkers find <span class="hl-bar hl-bar--mint">a clear next step</span> toward official support.</p>
+      </div>
+    </section>
+
+    <!-- 3. How can we help? A ledger of concerns -->
+    <section class="help" aria-labelledby="help-title">
+      <div class="wrap">
+        <h2 id="help-title" class="mono ledger-label"><span>How can we help?</span><span>02</span></h2>
+        <ul class="concerns" id="concerns" role="list"></ul>
+      </div>
+    </section>
+
+    <!-- 4. More than you see -->
+    <section class="stories" id="stories" data-story="commute" aria-labelledby="stories-title">
+      <div class="wrap">
+        <p class="mono ledger-label"><span>More than you see.</span><span>03</span></p>
+        <div class="stories__head">
+          <h2 id="stories-title" class="headline stories__title">Housing uncertainty isn't always visible.</h2>
+          <div class="stories__lines">
+            <p>Someone you see every day may be worried about keeping their home.</p>
+            <p>You can need help even if you work or still have a home.</p>
+          </div>
+        </div>
+
+        <div class="story-tabs" role="tablist" aria-label="Everyday scenes"></div>
+
+        <div id="story-panel" class="story" role="tabpanel" tabindex="-1">
+          <div class="story__frame frame">
+            <span class="frame__c frame__c--tl"></span><span class="frame__c frame__c--br"></span>
+            <div class="media story__media"></div>
+            <span class="story__label mono">Illustrative scenario</span>
+          </div>
+          <div class="story__panel">
+            <div class="story__seen">
+              <p class="eyebrow">What you see</p>
+              <p class="story__caption"></p>
+              <button type="button" class="btn btn--secondary story__toggle" aria-pressed="false">Look closer</button>
+            </div>
+            <div class="story__unseen" aria-live="polite">
+              <div class="story__after" hidden>
+                <p class="eyebrow story__after-label">Look closer</p>
+                <p class="story__hidden"></p>
+                <div class="story__familiar">
+                  <p class="headline">Does this feel familiar?</p>
+                  <a class="btn btn--ink" href="explore.html">Explore your options <span class="btn__dot" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 10h11M10.5 5 15.5 10 10.5 15"/></svg></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="story__nav">
+              <button type="button" class="story__step" data-dir="-1"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M17 10H4M9 4.5 3.5 10 9 15.5"/></svg>Previous</button>
+              <span class="story__count mono" aria-hidden="true"></span>
+              <button type="button" class="story__step" data-dir="1">Next<svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M3 10h13M11 4.5 16.5 10 11 15.5"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Find your next step: a ruled three-column ledger -->
+    <section class="next" aria-labelledby="next-title">
+      <div class="wrap">
+        <h2 id="next-title" class="mono ledger-label"><span>Find your next step</span><span>04</span></h2>
+        <ul class="next__cols" role="list">
+          <li><a class="next__col fx" href="explore.html">
+            <span class="mono next__n">01</span>
+            <span class="next__title">Explore your options</span>
+            <span class="next__line">Answer five quick questions and see where to start.</span>
+            <span class="next__go">Start the questions <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M3 10h13M11 4.5 16.5 10 11 15.5"/></svg></span>
+          </a></li>
+          <li><a class="next__col fx" href="support.html">
+            <span class="mono next__n">02</span>
+            <span class="next__title">Find support</span>
+            <span class="next__line">See what each NYC service offers.</span>
+            <span class="next__go">Browse services <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M3 10h13M11 4.5 16.5 10 11 15.5"/></svg></span>
+          </a></li>
+          <li><a class="next__col fx" href="explore.html">
+            <span class="mono next__n">03</span>
+            <span class="next__title">Your next-step card</span>
+            <span class="next__line">Leave with a clear plan you can print or email to yourself.</span>
+            <span class="next__go">Make your card <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M3 10h13M11 4.5 16.5 10 11 15.5"/></svg></span>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. Statement -->
+    <section class="statement" aria-labelledby="statement-title">
+      <div class="wrap statement__inner">
+        <h2 id="statement-title" class="display statement__title reveal">
+          <span class="rl" style="--i:0">A paycheck doesn't</span> <span class="rl" style="--i:1">always mean a</span> <span class="rl" style="--i:2"><span class="hl-bar">secure home.</span></span>
+        </h2>
+        <p class="statement__line">You don't have to navigate housing uncertainty alone.</p>
+        <div class="btn-row statement__ctas">
+          <a class="btn btn--ink" href="explore.html">Explore your options <span class="btn__dot" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 10h11M10.5 5 15.5 10 10.5 15"/></svg></span></a>
+          <a class="btn btn--secondary" href="tel:7185571399">Call DSS 718-557-1399</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-dark">
+    <div class="wrap">
+      <a class="logo footer__logo" href="index.html" aria-label="HOMEWARD home"><span class="logo__word">homeward</span></a>
+      <div class="fbox-grid">
+        <section class="fbox fbox--call" aria-labelledby="f-call">
+          <h2 class="fbox__label" id="f-call">Call</h2>
+          <p class="footer__note">DSS OneNumber</p>
+          <a class="footer__phone" href="tel:7185571399">718-557-1399</a>
+          <p class="footer__note">Or call 311 and ask for the Tenant Helpline.</p>
+        </section>
+        <section class="fbox" aria-labelledby="f-guide">
+          <h2 class="fbox__label" id="f-guide">Use this guide</h2>
+          <ul>
+            <li><a href="explore.html">Explore your options</a></li>
+            <li><a href="support.html">Find support</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </section>
+        <section class="fbox fbox--sources" aria-labelledby="f-sources">
+          <h2 class="fbox__label" id="f-sources">Official NYC sources</h2>
+          <ul class="fbox__cols">
+            <li><a href="https://www.nyc.gov/site/hra/help/homelessness-prevention.page" target="_blank" rel="noopener">Homelessness Prevention<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/homebase.page" target="_blank" rel="noopener">Homebase<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/cityfheps.page" target="_blank" rel="noopener">CityFHEPS<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/legal-assistance.page" target="_blank" rel="noopener">Legal assistance<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/cash-assistance.page" target="_blank" rel="noopener">Cash Assistance<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/supportive-housing.page" target="_blank" rel="noopener">Supportive Housing<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/affordable-housing.page" target="_blank" rel="noopener">Affordable Housing Services<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/home-support-unit.page" target="_blank" rel="noopener">Home Support Unit<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+            <li><a href="https://www.nyc.gov/site/hra/help/income-discrimination.page" target="_blank" rel="noopener">Source of income discrimination<span class="sr-only"> (official NYC page, opens in a new tab)</span></a></li>
+          </ul>
+        </section>
+        <section class="fbox fbox--about" aria-labelledby="f-about">
+          <h2 class="fbox__label" id="f-about">About</h2>
+          <p>HOMEWARD is an independent student design prototype, not an official NYC government service.</p>
+          <button type="button" class="motion-toggle" aria-pressed="false"><span class="motion-toggle__track" aria-hidden="true"></span><span class="motion-toggle__label">Turn off motion</span></button>
+          <p class="fbox__credit">3D house: Microsoft Fluent Emoji (<a href="assets/3d/FLUENT_EMOJI_LICENSE.txt">MIT License</a>).</p>
+        </section>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-cta" aria-hidden="true">
+    <a class="btn btn--ink" href="explore.html" tabindex="-1">Explore your options <span class="btn__dot" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 10h11M10.5 5 15.5 10 10.5 15"/></svg></span></a>
+  </div>
+
+  <script src="js/content.js"></script>
+  <script src="js/plates.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
